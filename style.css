@@ -5,6 +5,7 @@ header {
 }
 header img {
     margin: 10px 20px;
+    width: 60px;
 }
 
 header h1 {
@@ -30,10 +31,31 @@ header h1 {
 
 .main div {
     /* flex-basis: 80%; */
-    background-color: rgb(130, 244, 200);
+    background-color: rgb(194, 241, 223);
     padding: 2.5rem 6rem;
     font-size: 2rem;
+    text-align: center;
 }
+
+
+.main img {
+    width: 60%;
+    margin: 20px;
+
+    transform-origin: center;
+    transform-style: preserve-3d;
+    animation: rotateDice 1s infinite linear;
+}
+
+@keyframes rotateDice {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
 
 button {
     padding: .3rem 1rem;
@@ -51,3 +73,5 @@ button {
 button:hover {
     transform: scale(1.2);
 }
+
+
